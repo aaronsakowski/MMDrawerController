@@ -55,6 +55,7 @@
                         leftDrawerViewController:leftSideNavController
                         rightDrawerViewController:rightSideNavController];
     [self.drawerController setShowsShadow:NO];
+    [self.drawerController setFadeStatusBarBackgroundView:YES];
     [self.drawerController setRestorationIdentifier:@"MMDrawer"];
     [self.drawerController setMaximumRightDrawerWidth:200.0];
     [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
