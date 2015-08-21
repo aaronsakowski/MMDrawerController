@@ -40,7 +40,7 @@
        [self.navigationController isEqual:self.mm_drawerController.leftDrawerViewController]){
         CGRect rect = self.mm_drawerController.view.bounds;
         rect.size.width = self.mm_drawerController.maximumLeftDrawerWidth;
-        if (self.mm_drawerController.showsStatusBarBackgroundView) {
+        if (self.mm_drawerController.showsStatusBarBackgroundView && !self.mm_drawerController.fadeStatusBarBackgroundView) {
             rect.size.height -= 20.0f;
         }
         return rect;
